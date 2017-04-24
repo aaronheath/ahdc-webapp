@@ -1,0 +1,20 @@
+<table class="table is-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Published</th>
+    <th class="is-hidden-mobile">Tags</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let article of articles">
+    <td><a [routerLink]="['/article/' + article.slug]">{{ article.title }}</a></td>
+    <td>{{ article.published_formatted }}</td>
+    <td class="is-hidden-mobile">
+          <span *ngFor="let articleTag of article.tags">
+            <a [routerLink]="['/articles/tag/' + articleTag]" class="tag is-primary">{{ articleTag }}</a>
+          </span>
+    </td>
+  </tr>
+  </tbody>
+</table>

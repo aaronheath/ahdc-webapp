@@ -1,0 +1,60 @@
+{
+  "name": "Changi",
+  "version": "0.0.0",
+  "description": "NPM packages.json for Changi",
+  "scripts": {
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build --target production --aot --output-hashing=all",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:aaronheath/changi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "next",
+    "@angular/cli": "latest",
+    "@angular/common": "next",
+    "@angular/compiler": "next",
+    "@angular/compiler-cli": "next",
+    "@angular/core": "next",
+    "@angular/forms": "next",
+    "@angular/http": "next",
+    "@angular/platform-browser": "next",
+    "@angular/platform-browser-dynamic": "next",
+    "@angular/platform-server": "next",
+    "@angular/router": "next",
+    "core-js": "^2.4.1",
+    "raven-js": "^3.9.1",
+    "rxjs": "^5.3.0",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.38",
+    "@types/node": "^6.0.42",
+    "angulartics2": "1.6.3",
+    "bulma": "^0.2.3",
+    "codelyzer": "~2.0.0-beta.1",
+    "date-fns": "^1.21.1",
+    "font-awesome": "^4.7.0",
+    "jasmine-core": "2.5.2",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "node-sass": "^4.1.1",
+    "protractor": "4.0.9",
+    "ts-node": "1.2.1",
+    "tslint": "^4.0.2",
+    "typescript": "~2.1.0",
+    "webdriver-manager": "10.2.5"
+  }
+}

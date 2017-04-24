@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <a [routerLink]="['']">Home</a> |
+        <a [routerLink]="['articles']">Articles</a> |
+        <a [routerLink]="['about']">About</a>
+      </p>
+
+      <p>
+        <a href="https://twitter.com/bomberaza" target="_blank">
+          <span class="icon">
+            <app-fa i="twitter"></app-fa>
+          </span>
+        </a>
+      </p>
+
+      <p>
+        {{ quote.getQuote() }}<br>
+        <i>- {{ quote.getBy() }}</i>
+      </p>
+
+      <p>
+        <strong>Cheers for visiting!</strong>
+      </p>
+    </div>
+  </div>
+</footer>

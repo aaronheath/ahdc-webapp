@@ -1,0 +1,7 @@
+[
+  {
+    "context": ["/api/**"],
+    "target": "https://ahdc.dev",
+    "secure": false
+  }
+]

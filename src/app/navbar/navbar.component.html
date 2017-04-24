@@ -1,0 +1,24 @@
+<nav class="nav">
+  <div class="nav-left">
+    <a [routerLink]="['/']" class="nav-item me-animated"><!-- --></a>
+    <a [routerLink]="['/']" class="nav-item is-brand">Aaron Heath Dot Com</a>
+  </div>
+
+  <span class="nav-toggle" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <div class="nav-right nav-menu" [ngClass]="{ 'is-active': showMenu }">
+    <a [routerLink]="['/']" class="nav-item">Home</a>
+    <!--<a [routerLink]="['/articles']" class="nav-item" [@linkState]="onArticles">Articles</a>-->
+    <a [routerLink]="['/articles']" class="nav-item">Articles</a>
+    <a [routerLink]="['/about']" class="nav-item">About</a>
+    <a href="https://twitter.com/bomberaza" target="_blank" class="nav-item is-hidden-mobile">
+      <span class="icon">
+        <app-fa i="twitter"></app-fa>
+      </span>
+    </a>
+  </div>
+</nav>

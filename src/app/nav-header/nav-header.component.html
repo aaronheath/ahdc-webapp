@@ -1,0 +1,15 @@
+<section class="hero is-light" [ngClass]="extraClasses">
+  <div class="hero-head">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ title }}
+      </h1>
+      <h2 class="subtitle" *ngIf="subtitle">
+        {{ subtitle }}
+      </h2>
+    </div>
+  </div>
+</section>
