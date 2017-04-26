@@ -4,7 +4,7 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  ahdcApiPath: 'https://ahdc.dev',
+  ahdcApiPath: 'https://api.ahdc.dev',
   appendToTitle: ' | Full Stack Web Developer | Adelaide, Australia | aaronheath.com',
   googleAnalyticsTrackingId: 'UA-140464-2',
   production: false,
