@@ -5,6 +5,7 @@
   "scripts": {
     "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --target production --aot --output-hashing=all",
+    "build-dev": "ng build --target development --aot --output-hashing=all",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
