@@ -1,3 +1,4 @@
+import * as parse from 'date-fns/parse';
 import * as format from 'date-fns/format';
 
 export class Article {
@@ -16,7 +17,7 @@ export class Article {
     public subtitle: string,
     public tags: string[] = []
   ) {
-    this.published = new Date(published);
+    this.published = parse(published);
     this.published_formatted = format(this.published, 'D MMM YYYY');
   }
 
