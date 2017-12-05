@@ -27,6 +27,7 @@ import { NavHeaderComponent } from './nav-header/nav-header.component';
 import { PostsTableComponent } from './posts-table/posts-table.component';
 import { StyleCodeDirective } from './style-code.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SafeHtmlPipe } from './safeHtml';
 
 /**
  * Sentry error handling and logging.
@@ -68,7 +69,8 @@ const routes: Routes = [
     NavHeaderComponent,
     PostsTableComponent,
     StyleCodeDirective,
-    NotFoundComponent
+    NotFoundComponent,
+    SafeHtmlPipe,
   ],
   imports: [
     BrowserModule,
